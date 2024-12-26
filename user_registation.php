@@ -35,16 +35,7 @@
 	
 	$okFlag = TRUE;
 	if($okFlag){
-		function generateRandomString()  {
-            $characters = '0123456789';
-            $length = 5;
-            $charactersLength = strlen($characters);
-            $randomString = '';
-            for ($i = 0; $i < $length; $i++) {
-                $randomString .= $characters[rand(0, $charactersLength - 1)];
-			}
-            return $randomString;
-		}
+		
 		if(isset($_FILES["fileToUpload"]["name"]) && $_FILES["fileToUpload"]["name"] != ''){
 			//echo 123;exit;
 			$target_dir = "images/upload/";
@@ -98,7 +89,7 @@
 		$full_address = $_REQUEST['full_address'];
 		$city = $_REQUEST['city'];
 		$zip_code = $_REQUEST['zip_code'];
-		$password = generateRandomString();
+		$password = $_POST['spassword'];
 		
 		include 'send_mail_client.php';
 		$conn = connect();

@@ -32,7 +32,7 @@
 			$_SESSION['login']=TRUE;
 			//include('send_mail.php');
 			//echo "OK";
-			header("Location:../user_dashboard.php?done");		
+			header("Location:../index.php?done");		
 		}else if ($row = mysqli_fetch_array($result3)) {
 			$_SESSION['email']=$email;
 			//$_SESSION['password']=$password;

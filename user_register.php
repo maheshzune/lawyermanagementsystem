@@ -120,8 +120,10 @@
 								</div>
 							</div>
 							
-							
+							Enter Password :
 							<div class="form-group">
+							<input class="form-control" type="password" name="spassword" id="" placeholder="Password">
+							<br>
 								<div class="form-check">
 									
 									<input id="accept" name="agree" type="checkbox" value="y" /><strong>I Agree with terms & conditions </strong>

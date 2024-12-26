@@ -290,8 +290,8 @@
 							</div>
 							Enter Password :
 							<div class="form-group">
-								<input class="form-control" type="password" name="spassword" id="">
-							
+								<input class="form-control" type="password" name="spassword" id="" placeholder="Password">
+							<br>
 							<div class="form-group">
 								<div class="form-check">
 
