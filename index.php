@@ -12,12 +12,12 @@
 	<title>Lawyer Management System</title>
 	<style>
 		body {
-			background-color: #f1f1f1;
-			color: #333333;
+			background-color: #000000;
+			color: #ffffff;
 			font-family: 'Arial', sans-serif;
 		}
 		.customnav {
-			background-color: #343a40;
+			background-color: #ff6600;
 			color: white;
 			padding: 10px 0;
 		}
@@ -30,32 +30,32 @@
 			margin-right: 15px;
 		}
 		.customnav .nav-link:hover {
-			color: #adb5bd;
+			color: #ffcc00;
 		}
 		.banner {
-			background: linear-gradient(135deg, #e8e8e8, #ffffff);
+			background: linear-gradient(135deg, #ff6600, #ffcc00);
 			padding: 50px 0;
 			text-align: center;
 		}
 		.banner h1 {
-			color: #333333;
+			color: #ffffff;
 			font-weight: bold;
 		}
 		.banner .btn {
-			background-color: #343a40;
+			background-color: #000000;
 			color: #ffffff;
 			border: none;
 			padding: 10px 20px;
 			font-size: 1.2rem;
 		}
 		.banner .btn:hover {
-			background-color: #495057;
+			background-color: #ff6600;
 		}
 		.lawyerscard .card {
 			border: none;
 			border-radius: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			background-color: #ffffff;
+			box-shadow: 0 4px 8px rgba(255, 102, 0, 0.5);
+			background-color: #1a1a1a;
 			margin-bottom: 30px;
 		}
 		.lawyerscard .card img {
@@ -67,24 +67,24 @@
 			padding: 20px;
 		}
 		.lawyerscard .card-title {
-			color: #343a40;
+			color: #ff6600;
 			font-weight: bold;
 		}
 		.lawyerscard .btn-info {
-			background-color: #343a40;
+			background-color: #ff6600;
 			border: none;
 			color: #ffffff;
 		}
 		.lawyerscard .btn-info:hover {
-			background-color: #495057;
+			background-color: #ffcc00;
 		}
 		.aboutus {
 			padding: 50px 0;
-			background-color: #ffffff;
+			background-color: #1a1a1a;
 			text-align: center;
 		}
 		footer {
-			background-color: #343a40;
+			background-color: #ff6600;
 			color: white;
 			padding: 20px 0;
 			text-align: center;
@@ -137,12 +137,42 @@
 		</div>
 	</header>
 	<section>
-		<div class="banner">
-			<div class="container">
-				<h1>Find Your Suitable Lawyer Here!</h1>
-				<button class="btn">Find Lawyers</button>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images\slider1.jpg" height="600px" class="d-block w-100" alt="Slider Image 1">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Find Your Suitable Lawyer</h5>
+						<p>Expert legal assistance at your fingertips.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images\slider2.jpg" height="600px"  class="d-block w-100" alt="Slider Image 2">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Professional Lawyers</h5>
+						<p>Dedicated to serving your legal needs.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="images\slider3.jpg" height="600px"  class="d-block w-100" alt="Slider Image 3">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Your Legal Partner</h5>
+						<p>We are here to help you navigate the law.</p>
+					</div>
+				</div>
 			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
+		<br>
+		<br>
+		<br>
 	</section>
 	<section class="lawyerscard">
 		<div class="container">
@@ -173,7 +203,7 @@
 	</section>
 	<section class="aboutus">
 		<div class="container">
-			<h1>About Us</h1>
+			<h 1>About Us</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo debitis magni minus neque, sit culpa, placeat velit aperiam ea sunt eaque vitae similique iusto temporibus nihil ducimus repellendus alias eos!</p>
 			<h2>Our Contact Details</h2>
 			<p>Address: Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
